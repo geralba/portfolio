@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+            <div class="logo">
+                <p>About<span>Me.</span></p>
+            </div>
+            <nav>
+                <button class="open-sidenav" onclick="openSideNav()" >&#9776;</button>
+                
+                    <div class="nav-tabs" id = "navbar">
+                    <button  class="close-sidenav"  onclick="closeSideNav()">&times;</button>
+                    <a href="#home" > HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#services"> SERVICES</a>
+                    <a href="#skills">SKILLS</a>
+                    <a href="#experiences">EXPERIENCE</a>
+                    <a href="#contact"> CONTACT</a>
+                    </div>
+            
+            </nav>
+            </div>
+        </header>
+        <main>
+            <section class="home-container container" id="home">
+                <div class="home-content">
+                    <div class="home-text">
+                        <h2> <span>Hello, Welcome </span></h2>
+                        <div class="main-text">
+                        <h1> I am Geralba Kalbaj<br></h1>
+                        <p>A diligent and committed developer.
+                            Constantly focused on learning and expanding my knowledge. Now my focus is on web development.
+                        </p>
+                        </div>
+                        <div class="btn-container">
+                            <button class="btn-contact" onclick="contactUs()">Contact Us</button>
+                        </div>
+                    </div>
+                    <div class="home-image">
+                        
+                        <img src="./images/foto.JPG" alt ="home-picture" width="100%">
+                    </div>
+                </div>
+               
+            </section>
+       
+            
+            <hr>
+         
+            <section class="about-container container" id="about">
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-container">
+                        <img src="images/image2.png" alt="About picture" width="100%">
+                         </div>
+                    </div>
+                    <div class="about-text">
+                        <h1>About Me</h1>
+                        <p>I studied Business Informatics. During my years  My focus area for the past year has been mobile application
+                            using React Native. I am passionate about becoming a full-stack developer and enhancing my coding skills by 
+                            mastering both front-end and back-end. Currently dealing with Css, HTML, JS, Typescript and React.
+                            
+                        </p>
+                        
+
+                        <button class="btn-contact"  onclick="contactUs()">Contact Us</button>
+                    </div>
+                    
+                </div>
+              
+
+            </section>
+          
+            <hr>
+          
+
+            <section class="services-container container" id="services">
+                <h1>My <span>Services</span></h1>     
+           
+                <div class="card-container">
+                    <div class="card">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div class="card-text">
+                        <h2>App development</h2>
+                        <p>Using React Native to build high-quality, cross-platform apps for both iOS and Android. 
+                        </p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-globe"></i>
+                        <div class="card-text">
+                            <h2>Web development</h2>
+                            <p>Using CSS, HTML, JavaScript, TypeScript, 
+                                and React to  build dynamic and responsive user interfaces
+                                    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-figma"></i>
+                        <div class="card-text">
+                            <h2>Web design</h2>
+                            <p> Utilizing tools like Figma to create user-friendly, responsive and visually appealing websites.
+                                    
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+
+            </section>
+
+            <hr>
+
+            
+            <section class="skills-container container" id="skills">
+                <h1>My Skills</h1> 
+                <div class="skills-icons">
+                    <img src="images/html-icon.png" alt="Html icon" width="100%">
+                    <img src="images/css-icon.png" alt="Css icon" width="100%">
+                    <img src="images/js-icon.png" alt="JS icon" width="100%">
+                    <img src="images/react-icon.png" alt="React icon" width="100%">
+                    <img src="images/ts-icon.webp" alt="TS icon" width="100%">
+                    <img src="images/java-icon.svg" alt="Java icon" width="100%">
+                </div>
+            </section>
+
+            <hr>
+
+         
+            <section class="experiences-container container" id="experiences">
+                <h1>My <span>Experiences</span></h1>
+                <div class="card-container">
+                    <div class="card">
+                        <i class="fa fa-shopping-bag"></i>
+                        <div class="card-text">
+                        <h2>Shopping App</h2>
+                        <p>  An app focused on shopping for clothes, accessories and shoes. Users can easily browse throught different products, save or send to shopping cart their 
+                            favourite products. 
+                        </p>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa fa-automobile"></i>
+                        <div class="card-text">
+                            <h2>Auto's App</h2>
+                            <p> An app focused on renting and buying cars, trucks and bycicles. Users can easily browse throught different products, 
+                                save or buy their favourite products. It is available in 2 languages, albanian and english.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-figma"></i>
+                        <div class="card-text">
+                            <h2>Expenses App</h2>
+                            <p>An app focused on managing different expenses. Users can easily log items they purchased, specifying the quantity and 
+                                cost for each item. Users can add, modify or delete the items.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <hr>
+            
+            <section class="contact-form container" id="contact">
+                <h1>Contact <span>Me</span></h1>
+                <div class="contact-text">
+                    <div class="contact-data">
+                        <div class="contact-item">
+                            <h2><span>Location: </span></h2> 
+                            <h2>  Tirane</h2>  
+                        </div>
+                        <div class="contact-item">
+                            <h2><span>Street: </span></h2> 
+                            <h2>  Pjeter Bogdani</h2>  
+                        </div>
+                        
+                        <div class="contact-item">
+                            <h2><span>Phone: </span></h2>
+                            <h2>+ 355 693606996</h2>
+                        </div>
+                        <div class="contact-item">
+                            <h2><span>Email:</span> </h2>
+                            <h2>kalbajgeralba@gmail.com</h2>  
+                        </div>
+                         
+                        
+                    </div>
+                    <form action="#">
+                        <input type="text" placeholder="Name" class="name">
+                        <input type="email" placeholder="Email" class="email">
+                        <textarea placeholder="Message" class="message"></textarea>
+                        <div class="btn-container">
+                        <button class="btn-contact" >Contact Us</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </section>
+       
+        </main>
+        <footer>
+            <div class="social-icons">
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            
+            <h2> Copyright 2024 Honest Solutions; Designed by GK</h2>
+            
+
+        </footer>
+        
+        <script>
+            function openSideNav()  {
+                let element = document.getElementById("navbar");
+                element.classList.toggle('open');        
+            }
+
+            function contactUs () {
+                document.querySelectorAll('.btn-contact').forEach(button => {
+                button.addEventListener('click', function() {
+                    document.getElementById('contact').scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            }
+            
+            function closeSideNav() {
+                let element = document.getElementById("navbar");
+                element.classList.toggle('open');
+            }            
+        
+        </script>
+    </body>
+</html>
