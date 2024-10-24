@@ -15,9 +15,9 @@
                     <p>About<span>Me.</span></p>
                 </div>
                 <nav>
-                    <button class="open-sidenav" onclick="openSideNav()" >&#9776;</button>
+                    <button class="open-sidenav" onclick="toggleSideNav()" >&#9776;</button>
                         <div class="nav-tabs" id = "navbar">
-                        <button  class="close-sidenav"  onclick="closeSideNav()">&times;</button>
+                        <button  class="close-sidenav"  onclick="toggleSideNav()">&times;</button>
                         <a href="#home" > HOME</a>
                         <a href="#about">ABOUT</a>
                         <a href="#services"> SERVICES</a>
@@ -209,7 +209,7 @@
         </footer>
         
         <script>
-            function openSideNav()  {
+            function toggleSideNav()  {
                 let element = document.getElementById("navbar");
                 element.classList.toggle('open');        
             }
@@ -224,11 +224,6 @@
             });
             }
             
-            function closeSideNav() {
-                let element = document.getElementById("navbar");
-                element.classList.toggle('open');
-            }            
-        
         </script>
     </body>
 </html>
